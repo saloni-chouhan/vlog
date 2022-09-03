@@ -1,0 +1,17 @@
+<div class="container">
+	<br />
+	<h1>New Article</h1><br />
+	<%= form_with scope: :article, url: articles_path, local: true do |form| %>
+
+	<p>
+	    <%= form.text_field :title,class: "form-control", placeholder: "Title" %>
+	</p>
+	<p>
+	    <%= form.text_area :text,class: "form-control", placeholder: "Text" %>
+	</p>
+	 <p>
+	 	<%=form.submit class: "btn btn-primary" %>
+	 </p>
+
+	<% end %>
+</div>
